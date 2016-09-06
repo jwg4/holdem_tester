@@ -1,9 +1,6 @@
-from deuces import Evaluator, Card
+from deuces import Evaluator
 
-
-NUMBERS = '23456789TJQKA'
-SUITS = 'cdhs'
-WHOLE_PACK = set([ Card.new(number + suit) for number in NUMBERS for suit in SUITS ])
+from pack import WHOLE_PACK
 
 def best_holdem_hand(board, hand1, hand2):
     evaluator = Evaluator()
