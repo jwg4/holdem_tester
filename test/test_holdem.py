@@ -2,7 +2,7 @@ import unittest
 
 from deuces import Card
 
-from .holdem import count_outs
+from holdem import count_outs
 
 class TestCountOuts(unittest.TestCase):
     def test_simple(self):
